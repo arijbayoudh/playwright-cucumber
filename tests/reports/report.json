@@ -1,0 +1,146 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-scenarios-in-webshop-website;successful-login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Successful login with valid credentials",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 151801699
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2461871799
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to WebShop website",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:11"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 403170999
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on the Log in link",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:15"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 68718900
+            },
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "{userEmail}"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "Arij2026"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:19"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 637212899
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click on the Log in button",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 46526100
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I verify that I am redirected to the Home page with email '{userEmail}'",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:30"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 151583800
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "QnJvd3NlcjpjaHJvbWl1bSBWZXJzaW9uOiAxNTYuMC44MDc4LjQ=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOjBz",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@success",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-scenarios-in-webshop-website",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Login scenarios in WebShop website",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\features\\login_all.feature"
+  }
+]

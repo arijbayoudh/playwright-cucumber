@@ -9,8 +9,7 @@ const getWorldParams = () => {
 const reportsFolder = './tests/reports';
 
 const config = {
-  requireModule: ['ts-node/register'],
-  require: ['tests/**/*.ts'],
+  import: ['tests/**/*.ts'],
   paths: ['tests/**/*.feature'],
   format: [
     'json:tests/reports/report.json',
