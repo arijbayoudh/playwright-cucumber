@@ -12,7 +12,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 151801699
+              "duration": 234139100
             },
             "keyword": "Before",
             "hidden": true
@@ -20,33 +20,33 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2461871799
+              "duration": 1773794400
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
             "name": "I navigate to WebShop website",
             "match": {
-              "location": "tests\\steps\\LoginShopSteps.ts:11"
+              "location": "tests\\steps\\LoginShopSteps.ts:9"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 403170999
+              "duration": 587659800
             },
             "arguments": [],
             "keyword": "When ",
             "line": 6,
             "name": "I click on the Log in link",
             "match": {
-              "location": "tests\\steps\\LoginShopSteps.ts:15"
+              "location": "tests\\steps\\LoginShopSteps.ts:13"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 68718900
+              "duration": 123609399
             },
             "arguments": [
               {
@@ -70,39 +70,39 @@
             "line": 10,
             "name": "I enter valid credentials",
             "match": {
-              "location": "tests\\steps\\LoginShopSteps.ts:19"
+              "location": "tests\\steps\\LoginShopSteps.ts:17"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 637212899
+              "duration": 748821199
             },
             "arguments": [],
             "keyword": "And ",
             "line": 13,
             "name": "I click on the Log in button",
             "match": {
-              "location": "tests\\steps\\LoginShopSteps.ts:25"
+              "location": "tests\\steps\\LoginShopSteps.ts:22"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 46526100
+              "duration": 77195499
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
             "name": "I verify that I am redirected to the Home page with email '{userEmail}'",
             "match": {
-              "location": "tests\\steps\\LoginShopSteps.ts:30"
+              "location": "tests\\steps\\LoginShopSteps.ts:26"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 151583800
+              "duration": 276776299
             },
             "keyword": "After",
             "hidden": true,
@@ -126,6 +126,288 @@
           {
             "name": "@success",
             "line": 8
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-scenarios-in-webshop-website;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Login with invalid credentials",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 175586500
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1702100099
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to WebShop website",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 477911799
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on the Log in link",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:13"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 124820600
+            },
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "fakeuser@mail.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "wrongpassword"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I enter invalid credentials",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 371407400
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I click on the Log in button",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:22"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 69105300
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I verify login error message is displayed",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 195016700
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "QnJvd3NlcjpjaHJvbWl1bSBWZXJzaW9uOiAxNTYuMC44MDc4LjQ=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOjBz",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@failure",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-scenarios-in-webshop-website;login-and-access-shoes-category",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Login and access Shoes category",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 218825600
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1911060400
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to WebShop website",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 491817999
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on the Log in link",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:13"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 120745699
+            },
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "{userEmail}"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "Arij2026"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:17"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 636888300
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I click on the Log in button",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:22"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 51648499
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "I verify that I am redirected to the Home page with email '{userEmail}'",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:26"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 555859399
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I click on Shoes category",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:40"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 43197400
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I verify that Shoes page is displayed",
+            "match": {
+              "location": "tests\\steps\\LoginShopSteps.ts:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 209230199
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "QnJvd3NlcjpjaHJvbWl1bSBWZXJzaW9uOiAxNTYuMC44MDc4LjQ=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOjBz",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@navigate",
+            "line": 24
           }
         ],
         "type": "scenario"
