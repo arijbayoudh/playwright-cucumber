@@ -15,7 +15,7 @@ export class LoginShopPage extends BaseAction {
     }
 
     public async clickLoginLink() {
-        await this.clickElements(LOCATORS.loginLink);
+        await this.clickElements(LOCATORS.headerLoginLink);
     }
 
     public async fillEmailAndPassword(email: string, password: string) {
@@ -28,7 +28,7 @@ export class LoginShopPage extends BaseAction {
     }
 
     public async verifyLoggedInEmail(email: string) {
-        await expect(this.currentPage.locator(LOCATORS.accountLink)).toHaveText(email);
+        await expect(this.currentPage.locator(LOCATORS.headerEmailLink)).toHaveText(email);
     }
 
     public async verifyErrorMessage() {
